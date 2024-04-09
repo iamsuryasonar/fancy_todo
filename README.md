@@ -14,7 +14,7 @@ The Fancy ToDo App is a sleek, user-friendly to-do list application built with V
 
 1. **Adding a Task:** Enter your task in the input field and press the "Add" button or hit enter to see it appear in the list.
 2. **Toggling Completion:** Click toggle to mark it as complete or incomplete. Completed tasks are visually differentiated from incomplete ones.
-3. **Deleting a Task:**Click the delete button to remove it from the list.
+3. **Deleting a Task:** Click the delete button to remove it from the list.
 
 ## Installation
 
