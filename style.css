@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(1, 32, 29);
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    max-width: 700px;
+    margin: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    background-color: #4c00ff99;
+    box-shadow: 8px 5px 0px rgba(255, 255, 255, 0.893);
+}
+
+#input_field {
+    padding: 4px 12px;
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.todo_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border: 1px solid rgba(235, 235, 235, 0.3);
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: self-start;
+}
+
+button {
+    padding: 4px 10px;
+    border: none;
+    box-shadow: 5px 3px 0px;
+    color: white;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: black;
+    cursor: pointer;
+
+}
+
+#add_btn {
+    background-color: rgb(100, 242, 75);
+}
+
+#toggle {
+    background-color: rgb(100, 242, 75);
+}
+
+#delete {
+    background-color: rgb(247, 86, 38);
+}
+
+.complete {
+    background-color: rgba(255, 0, 0, 0.719);
+    box-shadow: 8px 5px 0px rgba(255, 255, 255, 0.893);
+}
+
+.incomplete {
+    background-color: rgba(0, 255, 119, 0.64);
+    box-shadow: 8px 5px 0px rgba(255, 255, 255, 0.893);
+}
+
+.incomplete_todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 2px;
+}
+
+.complete_todos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 2px;
+}
