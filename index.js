@@ -1,7 +1,7 @@
 /* Selectors */
 
 const input = document.getElementById('input_field')
-const add_btn = document.getElementById('add_btn')
+const todoForm = document.querySelector('.form')
 const todosDiv = document.querySelector('.todos')
 const incompleteTodosDiv = document.querySelector('.incomplete_todos')
 const completeTodosDiv = document.querySelector('.complete_todos')
@@ -9,7 +9,7 @@ const completeTodosDiv = document.querySelector('.complete_todos')
 /* Event listeners */
 
 window.addEventListener('load', populateTodos)
-add_btn.addEventListener('click', addTodo)
+todoForm.addEventListener('submit', addTodo)
 todosDiv.addEventListener('click', toggleAndDeleteTodo)
 
 /* functions */
@@ -25,7 +25,9 @@ function populateTodos() {
     })
 }
 
-function addTodo() {
+function addTodo(e) {
+    e.preventDefault()
+    console.log('clicked');
     let id = (Math.floor(Math.random() * 100) + Date.now() * Math.floor(Math.random() * 100)).toString().split('').splice(-8).join('')
     let todo = {
         id: id,
